@@ -1,4 +1,9 @@
-var a, b, c, d, hasilnettbundle, hasilnettunit;
+var a,
+    b,
+    c,
+    d,
+    hasilnettbundle,
+    hasilnettunit;
 
 function hitung() {
     a = document.getElementById("harganormal").value;
@@ -9,8 +14,8 @@ function hitung() {
     hasilnettbundle = a - (a * (c / 100));
     hasilnettbundle -= (hasilnettbundle * (d / 100));
     hasilnettunit = hasilnettbundle / b;
-    document.getElementById("hasilnettbundle").innerHTML = "Rp. " + hasilnettbundle.toFixed(2);
-    document.getElementById("hasilnettunit").innerHTML = "Rp. " + hasilnettunit.toFixed(2);
+    document.getElementById("hasilnettbundle").innerHTML = "Rp. " + hasilnettbundle.toFixed(2) + " /bundle";
+    document.getElementById("hasilnettunit").innerHTML = "Rp. " + hasilnettunit.toFixed(2) + " /unit";
 }
 
 function kosongkan() {
